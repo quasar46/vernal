@@ -1,0 +1,82 @@
+.page__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 70px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #8c8c8c;
+    h1 {
+        font-size: 40px;
+        font-weight: 500;
+        text-transform: uppercase;
+        @media (max-width: 1919px) {
+            font-size: 35px;
+        }
+        @media (max-width: 1023px) {
+            font-size: 31px;
+        }
+        @media (max-width: 767px) {
+            font-size: 22px;
+        }
+    }
+    a.btn {
+        display: flex;
+        align-items: center;
+        font-size: 21px;
+        text-transform: uppercase;
+        color: $color-text;
+        text-decoration: none;
+        // flex:0 1 auto;
+        flex-shrink: 0;
+        span {
+            margin-right: 30px;
+            white-space: nowrap;
+            @media (max-width: 1023px) {
+                margin-right: 20px;
+            }
+            @media (max-width: 767px) {
+                margin-right: 14px;
+            }
+        }
+        img {
+            flex: 1 0 auto;
+            max-width: 35px;
+            width: 35px;
+            @media (max-width: 1023px) {
+                max-width: 28px;
+            }
+            @media (max-width: 767px) {
+                max-width: 23px;
+            }
+        }
+
+        @media (max-width: 1919px) {
+            font-size: 19px;
+            font-weight: 500;
+        }
+        @media (max-width: 1023px) {
+            font-size: 19px;
+        }
+        @media (max-width: 767px) {
+            display: none;
+        }
+        &--mode {
+            @media (max-width: 767px) {
+                display: flex;
+                font-size: 14px;
+            }
+        }
+    }
+    @media (max-width: 1919px) {
+        padding-top: 55px;
+        padding-bottom: 20px;
+    }
+    @media (max-width: 1023px) {
+        padding-bottom: 15px;
+        padding-top: 67px;
+    }
+    @media (max-width: 767px) {
+        padding-top: 25px; // прыгает в макетах
+        padding-bottom: 7px; // прыгает в макетах
+    }
+}

@@ -1,0 +1,121 @@
+doctype html
+html(lang="ru")
+    head
+        include modules/head.pug
+    body
+        .main-content
+            include modules/header.pug
+
+            main
+                .page.cart
+
+                    .cart__wrapper
+                        .container
+                            .page__head
+                                h2 Магазин
+                                a.btn(href="").btn--mode
+                                    span Все товары
+                                    img(src="images/svg/arrow-next.svg" alt="")
+                        .container.container--mode
+                            .cart__body
+                                .cart__inner
+                                    picture
+                                        img(src="images/cart/item1.jpg" alt="")
+                                    .cart__description
+                                        .cart__wrap
+                                            h1.name Колумбия нарьяно
+                                            ul.cart__list.desktop
+                                                li
+                                                    <b>Кислотность:</b> низкая
+                                                li
+                                                    <b>Плотность:</b> высокая
+                                                li
+                                                    <b>Вкус:</b> шоколад,ежевика,фундук
+                                                li
+                                                    <b>Способ обработки:</b> мытый
+                                                li
+                                                    <b>Высота произрастания:</b> 1700 м
+                                                li
+                                                    <b>Деревья:</b> Бурбон, Катурра, Катуаи
+                                                li
+                                                    <b>Регион:</b> Кахамарка
+                                            .weight
+                                                .btn.active
+                                                    span 1 кг.
+                                                .btn
+                                                    span 250 г.
+                                            .row
+                                                label(for="select") Помолоть перед отправкой?
+                                                .select
+                                                    select(id="select")
+                                                        option Не молоть
+                                                        option Молоть
+                                            .amount
+                                                span
+                                                    img(src="images/svg/minus.svg" alt="")
+                                                input(type="text" placeholder="1")
+                                                span
+                                                    img(src="images/svg/plus.svg" alt="")
+                                        .cart__price
+                                            span 1300 руб.
+                                        button.add-basket Добавить в корзину
+                                ul.cart__list.laptop
+                                    li.title Описание товара
+                                    li
+                                        <b>Кислотность:</b> низкая
+                                    li
+                                        <b>Плотность:</b> высокая
+                                    li
+                                        <b>Вкус:</b> шоколад,ежевика,фундук
+                                    li
+                                        <b>Способ обработки:</b> мытый
+                                    li
+                                        <b>Высота произрастания:</b> 1700 м
+                                    li
+                                        <b>Деревья:</b> Бурбон, Катурра, Катуаи
+                                    li
+                                        <b>Регион:</b> Кахамарка
+                                p.cart__text Плотный кофе с высокой кислотностью. Во вкусе сухофрукты, темный виноград,малина.Плотный кофе с высокой кислотностью. Во вкусе сухофрукты, темный виноград,малина.Плотный кофе с высокой кислотностью. Во вкусе сухофрукты, темный виноград,малина.Плотный кофе с высокой кислотностью. Во вкусе сухофрукты, темный виноград,малина.Плотный кофе с высокой кислотностью. Во вкусе сухофрукты, темный виноград,малина
+                            .cart__other
+                                h2 Вам также будет интересно
+                                ul.cart__slick
+                                    li.item
+                                        a(href="")
+                                            picture
+                                                img(src="images/cart/item1.jpg" alt="")
+                                            span.name БРАЗИЛИЯ СЕРРАДО
+                                            span.price 1 300 руб.
+                                    li.item
+                                        a(href="")
+                                            picture
+                                                img(src="images/cart/item1.jpg" alt="")
+                                            span.name БРАЗИЛИЯ СЕРРАДО
+                                            span.price 1 300 руб.
+
+                                    li.item
+                                        a(href="") 
+                                            picture
+                                                img(src="images/cart/item1.jpg" alt="")
+                                            span.name БРАЗИЛИЯ СЕРРАДО
+                                            span.price 1 300 руб.
+
+                                    li.item
+                                        a(href="")
+                                            picture
+                                                img(src="images/cart/item1.jpg" alt="")
+                                            span.name БРАЗИЛИЯ СЕРРАДО
+                                            span.price 1 300 руб.
+
+                                    li.item
+                                        a(href="")
+                                            picture
+                                                img(src="images/cart/item1.jpg" alt="")
+                                            span.name БРАЗИЛИЯ СЕРРАДО
+                                            span.price 1 300 руб.
+
+
+
+
+        include modules/footer.pug
+        //- include modules/menu-mobile.pug
+        include modules/script.pug

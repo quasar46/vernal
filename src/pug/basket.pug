@@ -1,0 +1,105 @@
+doctype html
+html(lang="ru")
+    head
+        include modules/head.pug
+    body
+        .main-content
+            include modules/header.pug
+
+            main
+                .page
+
+                    .basket
+                        .container
+                            .page__head
+                                h1 Корзина
+                                a.btn(href="")
+                                    span В магазин
+                                    img(src="images/svg/arrow-next.svg" alt="")
+                        .container.container--mode
+                            .basket__wrapper
+                                ul.basket__items
+                                    li.item
+                                        picture
+                                            img(src="images/cart/item1.jpg" alt="")
+                                        .col-wrap
+                                            .col.col--1
+                                                .name
+                                                    h3 Колумбия нарьяно
+                                                    span.weight 250 г
+                                            .col.col--2
+                                                .select
+                                                    select.desktop
+                                                        option(value="Не молоть") Не молоть
+                                                        option(value="Молоть") Молоть
+                                                .amount.desktop
+                                                    span
+                                                        img(src="images/svg/minus.svg" alt="")
+                                                    input(type="text" value="1")
+                                                    span
+                                                        img(src="images/svg/plus.svg" alt="")
+                                                span.price.desktop 350 руб.
+                                                span.remove
+                                                    img(src="images/svg/remove.svg" alt="")
+                                        .col.col--3.mobile
+                                            .select
+                                                select
+                                                    option(value="Не молоть") Не молоть
+                                                    option(value="Молоть") Молоть
+                                            .amount
+                                                span
+                                                    img(src="images/svg/minus.svg" alt="")
+                                                input(type="text" value="1")
+                                                span
+                                                    img(src="images/svg/plus.svg" alt="")
+                                            span.price 350 руб.
+                                    li.item
+                                        picture
+                                            img(src="images/cart/item1.jpg" alt="")
+                                        .col-wrap
+                                            .col.col--1
+                                                .name
+                                                    h3 Колумбия нарьяно
+                                                    span.weight 250 г
+                                            .col.col--2
+                                                .select
+                                                    select.desktop
+                                                        option(value="Не молоть") Не молоть
+                                                        option(value="Молоть") Молоть
+                                                .amount.desktop
+                                                    span
+                                                        img(src="images/svg/minus.svg" alt="")
+                                                    input(type="text" value="1")
+                                                    span
+                                                        img(src="images/svg/plus.svg" alt="")
+                                                span.price.desktop 350 руб.
+                                                span.remove
+                                                    img(src="images/svg/remove.svg" alt="")
+                                        .col.col--3.mobile
+                                            .select
+                                                select
+                                                    option(value="Не молоть") Не молоть
+                                                    option(value="Молоть") Молоть
+                                            .amount
+                                                span
+                                                    img(src="images/svg/minus.svg" alt="")
+                                                input(type="text" value="1")
+                                                span
+                                                    img(src="images/svg/plus.svg" alt="")
+                                            span.price 350 руб.
+                                .basket__price
+                                    .row
+                                        h3 Сумма заказа:
+                                        span.price 1650 руб.
+                                    .row
+                                        button Оформить заказ
+
+
+
+
+
+
+
+        include modules/footer.pug
+        //- include modules/menu-mobile.pug
+        include modules/script.pug

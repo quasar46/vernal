@@ -1,0 +1,228 @@
+doctype html
+html(lang="ru")
+    head
+        include modules/head.pug
+    body
+        .main-content
+            include modules/header.pug
+
+            main
+                .page
+                    .partners
+                        .container
+                            .page__head
+                                h1 Партнерам
+                                a.btn(href="")
+                                    span В корзину
+                                    img(src="images/svg/arrow-next.svg" alt="")
+                        .container.container--mode
+                            .partners__wrapper
+                                .tabs.tabs--mode
+                                    .button.tablinks#defaultOpen(onclick="openTab(event, 'tab-1')")
+                                        button ПРЕДЛОЖИТЬ ПОМЕЩЕНИЕ В АРЕНДу
+                                    .button.tablinks(onclick="openTab(event, 'tab-2')")
+                                        button ОТКРЫТЬ КОФЕЙНЮ ВМЕСТЕ С НАМИ
+                                    .button.button--mode.tablinks(onclick="openTab(event, 'tab-3')")
+                                        button СТАТЬ ДИЛЕРОМ НАШЕЙ ПРОДУКЦИИ VERNAL COFFEE ROASTERS
+                                .tabs-content
+                                    .content.content--1#tab-1
+                                        .partners__inner
+                                            p.main-text Мы всегда открыты для предложений по расширению нашей сети. И порой именно интересное место вдохновляет нас на создание новой кофейни. К выбору локации для нашего будущего детища мы относимся особенно трепетно и выдвигаем следующие требования:
+                                            ul.main-list
+                                                li.item
+                                                    h2 Основные требования
+                                                    .col
+                                                        .row
+                                                            h3 Местоположение:
+                                                            p.text.text--size1 Центр города, творческое пространство, первая линия в ТЦ или БЦ.
+                                                        .row
+                                                            h3 Население:
+                                                            p.text.text--size1 От 500 тыс. человек.
+                                                        .row
+                                                            h3 Площадь помещения:
+                                                            p.text.text--size1  50-150 кв м.
+                                                        .row
+                                                            h3 Мощность электросети:
+                                                            p.text.text--size1 От 15 кВт.
+                                                li.item
+                                                    h2 Дополнительные требования
+                                                    .col
+                                                        .row
+                                                            p.text.text--size2 Наличие <span>парковочных мест</span> в непосредственной близости от локации.
+                                                        .row
+                                                            p.text.text--size2 Возможность установки <span>летней площадки</span> (в формате столиков с зонтиками или скамеек).
+                                                        .row
+                                                            p.text.text--size2 Возможность размещения <span>наружной вывески</span>.
+                                                li.item
+                                                    h2 Нам не подходят помещения
+                                                    .col
+                                                        .row
+                                                            p.text.text--size2 В локации <span>фудкортов</span>.
+                                                        .row
+                                                            p.text.text--size2 <span>Без окон.</span>
+                                                        .row
+                                                            p.text.text--size2 На <span>цокольном</span> этаже.
+                                            form(action="").partners__form
+                                                .box.box--1
+                                                .box.box--2
+                                                .box.box--3
+                                                .box.box--4
+                                                h2 Предложить аренду помещения
+                                                ul.list
+                                                    li.item
+                                                        input(type="text" placeholder="Город и адрес помещения")
+                                                    li.item
+                                                        input(type="text" placeholder="Собственник / Посредник")
+                                                    li.item
+                                                        input(type="text" placeholder="Площадь помещения")
+                                                    li.item
+                                                        input(type="text" placeholder="Арендная ставка")
+                                                    li.item
+                                                        input(type="text" placeholder="Контактное лицо")
+                                                    li.item
+                                                        input(type="text" placeholder="Телефон")
+                                                span.label
+                                                    p Прикрепите коммерческое предложение, план помещения (макс. 10 файлов)
+                                                input(type="download" placeholder="Загрузить файлы")
+
+
+                                                .consent
+                                                    input(type="checkbox" id="check1")
+                                                    label(for="check1") Согласие на обработку персональных данных
+                                                input(type="submit" value='Оставить заявку')
+                                    .content.content--1#tab-2
+                                        .partners__inner
+                                            p.main-text Мы всегда открыты для предложений по расширению нашей сети. И порой именно интересное место вдохновляет нас на создание новой кофейни. К выбору локации для нашего будущего детища мы относимся особенно трепетно и выдвигаем следующие требования:
+                                            ul.main-list
+                                                li.item
+                                                    h2 Основные требования
+                                                    .col
+                                                        .row
+                                                            h3 Местоположение:
+                                                            p.text.text--size1 Центр города, творческое пространство, первая линия в ТЦ или БЦ.
+                                                        .row
+                                                            h3 Население:
+                                                            p.text.text--size1 От 500 тыс. человек.
+                                                        .row
+                                                            h3 Площадь помещения:
+                                                            p.text.text--size1  50-150 кв м.
+                                                        .row
+                                                            h3 Мощность электросети:
+                                                            p.text.text--size1 От 15 кВт.
+                                                li.item
+                                                    h2 Дополнительные требования
+                                                    .col
+                                                        .row
+                                                            p.text.text--size2 Наличие <span>парковочных мест</span> в непосредственной близости от локации.
+                                                        .row
+                                                            p.text.text--size2 Возможность установки <span>летней площадки</span> (в формате столиков с зонтиками или скамеек).
+                                                        .row
+                                                            p.text.text--size2 Возможность размещения <span>наружной вывески</span>.
+                                                li.item
+                                                    h2 Нам не подходят помещения
+                                                    .col
+                                                        .row
+                                                            p.text.text--size2 В локации <span>фудкортов</span>.
+                                                        .row
+                                                            p.text.text--size2 <span>Без окон.</span>
+                                                        .row
+                                                            p.text.text--size2 На <span>цокольном</span> этаже.
+                                            form(action="").partners__form
+                                                .box.box--1
+                                                .box.box--2
+                                                .box.box--3
+                                                .box.box--4
+                                                h2 Предложить аренду помещения
+                                                ul.list
+                                                    li.item
+                                                        input(type="text" placeholder="Город и адрес помещения")
+                                                    li.item
+                                                        input(type="text" placeholder="Собственник / Посредник")
+                                                    li.item
+                                                        input(type="text" placeholder="Площадь помещения")
+                                                    li.item
+                                                        input(type="text" placeholder="Арендная ставка")
+                                                    li.item
+                                                        input(type="text" placeholder="Контактное лицо")
+                                                    li.item
+                                                        input(type="text" placeholder="Телефон")
+                                                span.label
+                                                    p Прикрепите коммерческое предложение, план помещения (макс. 10 файлов)
+                                                input(type="download" placeholder="Загрузить файлы")
+
+                                                .consent
+                                                    input(type="checkbox" id="check2")
+                                                    label(for="check2") Согласие на обработку персональных данных
+                                                input(type="submit" value='Оставить заявку')
+                                    .content.content--1#tab-3
+                                        .partners__inner
+                                            p.main-text Мы всегда открыты для предложений по расширению нашей сети. И порой именно интересное место вдохновляет нас на создание новой кофейни. К выбору локации для нашего будущего детища мы относимся особенно трепетно и выдвигаем следующие требования:
+                                            ul.main-list
+                                                li.item
+                                                    h2 Основные требования
+                                                    .col
+                                                        .row
+                                                            h3 Местоположение:
+                                                            p.text.text--size1 Центр города, творческое пространство, первая линия в ТЦ или БЦ.
+                                                        .row
+                                                            h3 Население:
+                                                            p.text.text--size1 От 500 тыс. человек.
+                                                        .row
+                                                            h3 Площадь помещения:
+                                                            p.text.text--size1  50-150 кв м.
+                                                        .row
+                                                            h3 Мощность электросети:
+                                                            p.text.text--size1 От 15 кВт.
+                                                li.item
+                                                    h2 Дополнительные требования
+                                                    .col
+                                                        .row
+                                                            p.text.text--size2 Наличие <span>парковочных мест</span> в непосредственной близости от локации.
+                                                        .row
+                                                            p.text.text--size2 Возможность установки <span>летней площадки</span> (в формате столиков с зонтиками или скамеек).
+                                                        .row
+                                                            p.text.text--size2 Возможность размещения <span>наружной вывески</span>.
+                                                li.item
+                                                    h2 Нам не подходят помещения
+                                                    .col
+                                                        .row
+                                                            p.text.text--size2 В локации <span>фудкортов</span>.
+                                                        .row
+                                                            p.text.text--size2 <span>Без окон.</span>
+                                                        .row
+                                                            p.text.text--size2 На <span>цокольном</span> этаже.
+                                            form(action="").partners__form
+                                                .box.box--1
+                                                .box.box--2
+                                                .box.box--3
+                                                .box.box--4
+                                                h2 Предложить аренду помещения
+                                                ul.list
+                                                    li.item
+                                                        input(type="text" placeholder="Город и адрес помещения")
+                                                    li.item
+                                                        input(type="text" placeholder="Собственник / Посредник")
+                                                    li.item
+                                                        input(type="text" placeholder="Площадь помещения")
+                                                    li.item
+                                                        input(type="text" placeholder="Арендная ставка")
+                                                    li.item
+                                                        input(type="text" placeholder="Контактное лицо")
+                                                    li.item
+                                                        input(type="text" placeholder="Телефон")
+                                                span.label
+                                                    p Прикрепите коммерческое предложение, план помещения (макс. 10 файлов)
+                                                input(type="download" placeholder="Загрузить файлы")
+
+
+                                                .consent
+                                                    input(type="checkbox" id="check3")
+                                                    label(for="check3") Согласие на обработку персональных данных
+                                                input(type="submit" value='Оставить заявку')
+
+
+
+
+        include modules/footer.pug
+        //- include modules/menu-mobile.pug
+        include modules/script.pug

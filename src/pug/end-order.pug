@@ -1,0 +1,36 @@
+doctype html
+html(lang="ru")
+    head
+        include modules/head.pug
+    body
+        .main-content
+            include modules/header.pug
+
+            main
+                .page.end-order
+                    .container
+                        .end-order__wrapper
+                            .page__head
+                                h1 Завершение заказа
+                                a.btn(href="")
+                                    span В магазин
+                                    img(src="images/svg/arrow-next.svg", alt="")
+                            .end-order__body
+                                h2 Благодарим вас за заказ!
+                                ul
+                                    li
+                                        p Заказ <span>№741852369 </span>  уже собирается.
+                                    li
+                                        p Предполагаемое время доставки заказа <span>10.05.2020.</span>
+                                    li
+                                        p.text Вы получите СМС оповещение на телефон и адрес электронной почты.
+                                a.btn(href="")
+                                    span В магазин
+                                    img(src="images/svg/arrow-next.svg", alt="")
+
+
+
+
+        include modules/footer.pug
+        //- include modules/menu-mobile.pug
+        include modules/script.pug

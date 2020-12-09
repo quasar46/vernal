@@ -1,0 +1,84 @@
+doctype html
+html(lang="ru")
+    head
+        include modules/head.pug
+    body
+        .main-content
+            include modules/header.pug
+
+            main
+                .page
+                    .order
+                        .container
+                            .page__head
+                                h1 Оформление заказа
+                                a.btn(href="")
+                                    span В корзину
+                                    img(src="images/svg/arrow-next.svg" alt="")
+                        .container.container--mode
+                            ul.order__wrapper
+                                li.order__item
+                                    h2 Введите контактные данные
+                                    ul.list
+                                        .row
+                                            input(type="text" placeholder="Фамилия Имя")
+                                        .row
+                                            input(type="text" placeholder="Телефон")
+                                        .row
+                                            input(type="text" placeholder="E-mail")
+                                li.order__item
+                                    h2 Адрес доставки
+                                    ul.list
+                                        .row
+                                            input(type="text" placeholder="Город/ населенный пункт")
+                                        .row
+                                            input(type="text" placeholder="Улица")
+                                        .row.row--mode
+                                            input(type="text" placeholder="Дом")
+                                            input(type="text" placeholder="Корпус")
+                                            input(type="text" placeholder="Кв/офис")
+                                        .row.row--dop
+                                            input(type="text" placeholder="Дополнительные коментарии")
+                                li.order__item
+                                    h2 Доставка и оплата
+                                    ul.list.list--mode
+                                        li.row
+                                            input(type="radio" id="btn1" name="radio1" checked)
+                                            label(for="btn1" ) Доставка курьером
+                                        li.row
+                                            input(type="radio" id="btn2" name="radio1")
+                                            label(for="btn2") Самовывоз
+                                        li.row
+                                            input(type="radio" id="btn3" name="radio2" checked)
+                                            label(for="btn3") Оплата банковской картой на сайте
+                                        li.row
+                                            input(type="radio" id="btn4" name="radio2")
+                                            label(for="btn4") Оплата при получении картой или наличными
+                                        .price
+                                            .row
+                                                span Сумма заказов:
+                                                span 1650 руб.
+                                            .row
+                                                span Доставка
+                                                span + 200 руб.
+                                            .row.total
+                                                span.total Итого:
+                                                span.amount 1850 руб.
+                                button Заказать
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        include modules/footer.pug
+        //- include modules/menu-mobile.pug
+        include modules/script.pug

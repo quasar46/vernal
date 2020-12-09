@@ -1,0 +1,23 @@
+@import "../../node_modules/normalize.scss/normalize.scss";
+// @import "../fonts/stylesheet.scss";
+@import "variables.scss";
+@import "base.scss";
+
+@import "blocks/header";
+@import "blocks/hero";
+@import "blocks/description";
+@import "blocks/action";
+@import "blocks/life";
+@import "blocks/footer";
+@import "blocks/page";
+@import "blocks/end-order";
+@import "blocks/cart";
+@import "blocks/main-catalog";
+@import "blocks/basket";
+@import "blocks/order";
+@import "blocks/partners";
+@import "blocks/tabs";
+@import "blocks/articles";
+@import "blocks/other";
+@import "blocks/article";
+@import "blocks/mobile-menu";

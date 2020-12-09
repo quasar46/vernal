@@ -1,0 +1,55 @@
+// .life {
+//     .prev,
+//     .next {
+//         width: 34px;
+//         position: absolute;
+//         top: 50%;
+//         transform: translateY(-45px);
+//         @media (max-width: 320px) {
+//             width: 23px;
+//         }
+//     }
+//     .next {
+//         right: 40px;
+//         @media (max-width: 1919px) {
+//             right: 40px;
+//         }
+//         @media (max-width: 767px) {
+//             right: -40px;
+//         }
+//     }
+//     .prev {
+//         left: 0;
+//         @media (max-width: 767px) {
+//             left: -40px;
+//         }
+//     }
+// }
+
+.cart,
+.article,
+.life {
+    .prev,
+    .next {
+        width: 34px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50px);
+        @media (max-width: 1919px) {
+            width: 28px;
+        }
+        @media (max-width: 767px) {
+            width: 23px;
+        }
+    }
+    .next {
+        right: 0;
+    }
+    .prev {
+        left: 0;
+    }
+}
+
+.page {
+    margin-bottom: 90px;
+}

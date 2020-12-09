@@ -1,0 +1,62 @@
+doctype html
+html(lang="ru")
+	head
+		include modules/head.pug
+	body
+		.main-content
+			include modules/header.pug
+
+			main
+				.hero
+					.container.container--mode
+						h1 Доставка пончиков и свежеобжаренного кофе по Курску
+						a(href="main-catalog.html") В магазин
+				.description
+					.container.container--mode
+						p Сеть профессиональных кофе баров Дона Бар открыла для Вас направление доставки свежеобжаренного кофе и а для Вас направление доставки свежеобжаренного кофе и пончиков собственного производства в Курске.Сеть профессиональных кофе баров Дона Бар открыла для Вас направление доставки свежеобжаренного кофе и пончиков собственного производства в Курске.
+				.action
+					.container.container--mode
+						ul
+							li
+								h3 Мы используем
+								.col
+									p <span>Только свежие</span> и <span>натуральные</span> продукты и чтим кофейные истоки
+							li
+								h3 Мы создаем
+								.col
+									p небольшую кофейную <span>революцию в городе.</span>
+									p Да, <span>мы любим своё дело</span> больше всего на свете, и считаем, что каждая частичка души, вложенная в приготовление напитка, совершенствует его. 
+							li
+								h3 Мы проводим
+								.col
+									p для Вас в наших кофейнях и соцсетях обучающие <span>мастер-классы</span> по завариванию, чтобы даже дома Вы могли <span>насладиться любимым вкусом</span> кофе от Донат Бар!
+				.life
+					.container.container--mode
+						h2 Наша жизнь
+						ul.life__slick
+							li.item
+								picture
+									img(src="images/life-item1.jpg" alt="")
+								span.date 21.03.2020
+								span.name Название статьи будет тут
+							li.item
+								picture
+									img(src="images/life-item1.jpg" alt="")
+								span.date 21.03.2020
+								span.name Название статьи будет тут
+							li.item
+								picture
+									img(src="images/life-item1.jpg" alt="")
+								span.date 21.03.2020
+								span.name Название статьи будет тут
+							li.item
+								picture
+									img(src="images/life-item1.jpg" alt="")
+								span.date 21.03.2020
+								span.name Название статьи будет тут
+
+
+
+		include modules/footer.pug
+		//- include modules/menu-mobile.pug
+		include modules/script.pug
